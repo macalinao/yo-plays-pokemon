@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/yo_cb', function(req, res) {
   io.emit('yo', req.query);
