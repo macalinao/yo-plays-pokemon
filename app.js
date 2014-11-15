@@ -6,7 +6,9 @@ var io = require('socket.io')(server);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/yo/:btn', function(req, res) {
-  io.emit('yo:' + (req.params.btn || 'unk'), req.query);
+  var send = req.query;
+  send.btn = req.params.btn || 'unk';
+  io.emit('yo', send);
 });
 
 var port = process.env.PORT || 3000;
