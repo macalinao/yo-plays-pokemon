@@ -3,6 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
     <head>
         <style type="text/css">@import url(&quot;css/GameBoy.css&quot;);</style>
+        <style>
+            .information {
+                font-family: "Montserrat Bold", Calibri, Arial, sans-serif;
+                font-size: 14px;
+                color: #fff;
+                margin-left: 25px;
+            }
+        </style>
         <script type="text/javascript">
     var DEBUG_MESSAGES = false;
     var DEBUG_WINDOWING = false;
@@ -205,6 +213,19 @@
         </ul>
         <div id="fullscreenContainer">
             <canvas id="fullscreen" class="maximum"/>
+        </div>
+        <div class = "information">
+            <h1>Yo Plays Pokemon</h1>
+            <p>Send a Yo to the following to perform an action:</p>
+            <ul>
+                <li>yppup - move up</li>
+                <li>yppdown - move down</li>
+                <li>yppright - move right</li>
+                <li>yppleft - move left</li>
+                <li>yppa - press a</li>
+                <li>yppb - press b</li>
+                <li>yppstart - press start</li>
+            </ul>
         </div>
     </body>
 </html>
