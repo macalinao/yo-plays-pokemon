@@ -462,3 +462,10 @@ ul.menu > li:hover > ul.menu {
   color: #fff;
   margin-left: 25px;
 }
+
+#actions {
+  text-transform: uppercase;
+  font-family: "Montserrat Bold", Calibri, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
