@@ -5,8 +5,10 @@ var io = require('socket.io')(server);
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/yo_cb', function(req, res) {
-  io.emit('yo', req.query);
+['a', 'b', 'left', 'right', 'up', 'down', 'start', 'select', 'l', 'r'].filter(function(btn) {
+  app.get('/yo/' + btn, function(req, res) {
+    io.emit('yo:' + btn, req.query);
+  });
 });
 
 var port = process.env.PORT || 3000;
