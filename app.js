@@ -9,6 +9,7 @@ app.get('/yo_cb', function(req, res) {
   io.emit('yo', req.query);
 });
 
-server.listen(3000, function() {
-  console.log('listening on *:3000');
+var port = process.env.PORT || 3000;
+server.listen(port, function() {
+  console.log('listening on *:' + port);
 });
