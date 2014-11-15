@@ -1,0 +1,10 @@
+{
+  "name": "yo-plays-pokemon",
+  "description": "Twitch plays pokemon for Yo",
+  "version": "0.1.0",
+  "author": "Ian Macalinao <me@ian.pw>",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.2.0"
+  }
+}
