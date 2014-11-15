@@ -4,6 +4,8 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 app.use(express.static(__dirname + '/public'));
+app.use('/emu', express.static(__dirname + '/jsemulator'));
+
 
 app.get('/yo/:btn', function(req, res) {
   var send = req.query;
